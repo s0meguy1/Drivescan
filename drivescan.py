@@ -30,7 +30,7 @@ if not os.path.exists(outdir):
     os.makedirs(outdir)
 # Keywords to extract
 textract_ext = ['docx','eml','epub','msg','pptx','ps','txt','xlsx','xls','rtf','pdf']
-native_ext = ['template','conf','config','deploy','bat','vbs','LOG','xml','cmd','vb','py','pl','csv','html','json','htm']
+native_ext = ['template','conf','config','deploy','bat','vbs','LOG','xml','cmd','vb','py','pl','csv','html','json','htm','ps1','txt']
 
 # To search for any cleartext password
 def searchstring():

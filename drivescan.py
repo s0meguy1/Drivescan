@@ -28,9 +28,10 @@ outputfile = outdir + 'tempresult' + date+ '.txt'
 errorfile = outdir + 'error' + date + '.txt'
 if not os.path.exists(outdir):
     os.makedirs(outdir)
-# Keywords to extract
+# Non cleartext files that textract can read
 textract_ext = ['docx','eml','epub','msg','pptx','ps','txt','xlsx','xls','rtf','pdf']
-native_ext = ['template','conf','config','deploy','bat','vbs','LOG','xml','cmd','vb','py','pl','csv','html','json','htm','ps1','txt']
+# cleartext files
+native_ext = ['template','conf','config','deploy','bat','vbs','LOG','xml','cmd','vb','py','pl','csv','html','json','htm','ps1','txt','sh']
 
 # To search for any cleartext password
 def searchstring():

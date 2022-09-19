@@ -50,7 +50,6 @@ def searchstring():
                     time = datetime.datetime.now()
                     k.write(str(time)+ '||' + str(e) + '\n')
                     k.close()
-
         elif paths.endswith(tuple(native_ext)):
             try:
                 open_file=open(path + dirslash + paths,'r',encoding='utf-8',errors='ignore')
@@ -63,7 +62,6 @@ def searchstring():
                             w.write(str(time)+ '||' + path + dirslash + paths +'||'+str(x)+'\n')
                             w.close()
             except Exception as e:
-
                 with open (errorfile, 'a+', encoding = 'utf-8', errors = 'ignore') as k :
                     time = datetime.datetime.now()
                     k.write(str(time)+ '||' + str(e) + '\n')
@@ -73,8 +71,6 @@ def searchstring():
                 time = datetime.datetime.now()
                 e.write(str(time)+ '||'+ 'File Type not supported:' + path + dirslash + paths + '\n')
                 e.close()
-
-
             continue;
 
 def main():
